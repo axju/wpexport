@@ -7,7 +7,7 @@ __title__ = 'wpexport'
 __summary__ = 'Backup your Wordpress post to GitHub or local'
 __url__ = 'https://github.com/axju/wpexport'
 
-__version__ = '0.0.2a1'
+__version__ = '0.0.2'
 
 __author__ = 'Axel Juraske'
 __email__ = 'axel.juraske@short-report.de'

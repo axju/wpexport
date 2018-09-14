@@ -1,4 +1,4 @@
-from wpexport.cls import wpexport
+from wpexport.cls import WPExport
 
 from .__about__ import (
     __author__, __copyright__, __email__, __license__, __summary__, __title__,
