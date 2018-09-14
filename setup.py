@@ -20,6 +20,7 @@ setup(
     author_email=about['__email__'],
     license=about['__license__'],
     long_description=readme(),
+    long_description_content_type='text/markdown',
     keywords='github wordpress backup sync',
     packages=find_packages(),
     install_requires=[
