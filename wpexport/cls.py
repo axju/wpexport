@@ -10,7 +10,7 @@ class WPExport(object):
     """docstring for wpexport."""
 
     PARAMETER = {
-        'wp_url': {'help': 'The root url to yout Wordpress'},
+        'wp_url': {'help': 'The root url to your Wordpress'},
         'wp_user': {'help': 'The Wordpress user'},
         'wp_pw': {'help': 'The password of the Wordpress user'},
         'folder': {'help': 'The locale folder for the files'},

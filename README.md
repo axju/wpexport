@@ -1,15 +1,15 @@
 # wpexport
-This small python package backup your Wordpress post to GitHub. It convert
-the html to Markdown with pypandoc. For the api interaction, I uses the two
-packages gitpython and python-wordpress-xmlrpc. So you have to install this
+This small python package backup your Wordpress post to GitHub/locale. It
+convert the html to Markdown with pypandoc. For the api interaction, I uses the
+two packages gitpython and python-wordpress-xmlrpc. So you have to install this
 dependence, if you wand to install it from source.
 
 ## quick start
-Install wpexport:
+Install:
 ```bash
 pip install wpexport
 ```
-It uses pandoc for the formatting. you may have to install it manually.
+It uses pandoc. You may have to install it manually.
 ```bash
 sudo apt install pandoc
 ```
@@ -19,13 +19,12 @@ Set up your settings:
 ```bash
 python -m wpexport --setup
 ```
-and when you have to input all the parameters. After that it will save the
-parameters in the file ~.wpexport.conf. Notice that your passwords are in this
-file.
+After you have input all the parameters, they will be save in the file
+~.wpexport.conf. Notice your passwords are also in this file.
 
 Now you are ready to have some fun.
 ```bash
-python -m wpexport
+wpexport
 ```
 
 ## command line arguments
@@ -35,14 +34,14 @@ parameter as the command option. The command option will always override the
 config file. For axample you cann uses the config file for all parametes exclude
 the password. And then pass the password throw the command line.
 ```bash
-python -m wpexport --wp_pw 1234
+wpexport --wp_pw 1234
 ```
 
 ## the config file
 You can also uses another config file. For the setup as well as the backup
 function.
 ```bash
-python -m wpexport --config "/path/to/your/config.json"
+wpexport --config "/path/to/your/config.json"
 ```
 The config file is a basic json file. You can look into it and change the
 values, if you like.
@@ -50,7 +49,7 @@ values, if you like.
 ## only local export
 If you didn't like GitHub, only export it to your local machine.
 ```bash
-python -m wpexport --output "/path/to/your/export"
+wpexport --output "/path/to/your/export"
 ```
 
 ## how does it work?
